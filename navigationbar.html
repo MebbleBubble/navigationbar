@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home Page</a>
+		<a id="yearly" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-inbox"></i> Yearly Tracker</a>
+		<a id="monthly" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-week"></i> Monthly Tracker</a>
+		<a id="weekly" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-briefcase"></i> Weekly Tracker</a>
+</a>
+		<a id="study program" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list-check"></i> Tasks</a>
+		<a id="habit tracker" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill-wave"></i> Business</a>
+		<a id="budget tracker" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-lightbulb"></i> Knowledge</a>
+		<a id="watching list" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-layer-group"></i> Topics</a>
+		<a id="reading list" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book"></i> Notes</a>
+		<a id="language learning" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bookmark"></i> Media</a>
+		<a id="notes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-wrench"></i> Resourses</a>
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/HOME-PAGE-00511bd24dc24b9490679fadb0143fac?pvs=4", '_blank').focus();
+			else if (id == "yearly")
+				window.open("https://www.notion.so/Yearly-Tracker-374cb24dc6de4b6aa90248f9e4783533?pvs=4", '_blank').focus();
+			else if (id == "monthly")
+				window.open("https://www.notion.so/Monthly-Tracker-c3d49e672a124fefb99f5a52f2069794?pvs=4", '_blank').focus();
+			else if (id == "month")
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "projects")
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "business")
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "tasks")
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "knowledge")
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "topics")
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "notes")
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "media")
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "resourses")
+				window.open("https://example.com3", '_blank').focus();
+			else if (id == "lifewiki")
+				window.open("https://example.com", '_blank').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
